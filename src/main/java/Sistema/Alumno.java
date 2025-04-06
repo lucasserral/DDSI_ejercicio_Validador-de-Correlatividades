@@ -1,9 +1,14 @@
 package Sistema;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Alumno {
     private Set<Materia> materiasAprobadas;
+
+    public Alumno() {
+        this.materiasAprobadas = new HashSet<Materia>();
+    }
 
     public void aprobarMateria(Materia materia) {
         this.materiasAprobadas.add(materia);
